@@ -22,4 +22,9 @@ public interface TaskRepository extends JpaRepository<Task, Long> {
 
     @RestResource(rel = "task", path = "titleContains")
     List<Task> findTasksByTitleContains(String title);
+
+    @RestResource(rel = "task", path = "statusEqualsAndCompleteByBefore")
+    List<Task> findTasksByStatusEqualsAndCompleteByBefore(@Param("status") String status,
+                                                          @DateTimeFormat(pattern = "yyyy-MM-dd")
+                                                          @Param("completeBy") LocalDate completeBy);
 }

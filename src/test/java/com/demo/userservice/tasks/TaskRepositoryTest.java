@@ -73,4 +73,15 @@ class TaskRepositoryTest {
         assertThat(invalid).isEmpty();
     }
 
+    @Test
+    void findTasksByStatusEqualsAndCompleteByBefore_whenValid_returnsListTasks() {
+        List<Task> tasks = repository.findTasksByStatusEqualsAndCompleteByBefore("pending", LocalDate.of(2020, 4, 19));
+        assertThat(tasks).hasSize(4);
+    }
+
+    @Test
+    void findTasksByStatusEqualsAndCompleteByBefore_whenInValid_returnsEmpty() {
+        List<Task> tasks = repository.findTasksByStatusEqualsAndCompleteByBefore("invalid", LocalDate.of(2020, 4, 19));
+        assertThat(tasks).isEmpty();
+    }
 }
