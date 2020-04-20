@@ -21,7 +21,7 @@ public class Startup implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        Task[] data = mapper.readValue(new ClassPathResource("data.json").getFile(), Task[].class);
+        Task[] data = mapper.readValue(new ClassPathResource("data.json").getInputStream(), Task[].class);
         List<Task> tasks = new ArrayList<>(Arrays.asList(data));
         repository.saveAll(tasks);
     }
