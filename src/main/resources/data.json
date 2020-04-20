@@ -4,55 +4,55 @@
     "title": "My Task 1",
     "description": "My task 1's full description",
     "status": "pending",
-    "createdOn": 1587229713827,
-    "completeBy": 1587229713827
+    "createdOn": "2020-04-18",
+    "completeBy": "2020-04-18"
   },
   {
     "id": null,
     "title": "My Task 2",
     "description": "My task 2's full description",
     "status": "pending",
-    "createdOn": 1587229713827,
-    "completeBy": 1587229713827
+    "createdOn": "2020-04-20",
+    "completeBy": "2020-04-18"
   },
   {
     "id": null,
     "title": "My Task 3",
     "description": "My task 3's full description",
-    "status": "pending",
-    "createdOn": 1587229713827,
-    "completeBy": 1587229713827
+    "status": "completed",
+    "createdOn": "2020-04-18",
+    "completeBy": "2020-04-18"
   },
   {
     "id": null,
     "title": "My Task 4",
     "description": "My task 4's full description",
     "status": "pending",
-    "createdOn": 1587229713827,
-    "completeBy": 1587229713827
+    "createdOn": "2020-04-19",
+    "completeBy": "2020-04-19"
   },
   {
     "id": null,
     "title": "My Task 5",
     "description": "My task 5's full description",
     "status": "pending",
-    "createdOn": 1587229713827,
-    "completeBy": 1587229713827
+    "createdOn": "2020-04-19",
+    "completeBy": "2020-04-19"
   },
   {
     "id": null,
     "title": "My Task 6",
     "description": "My task 6's full description",
     "status": "pending",
-    "createdOn": 1587229713827,
-    "completeBy": 1587229713827
+    "createdOn": "2020-04-18",
+    "completeBy": "2020-04-18"
   },
   {
     "id": null,
     "title": "My Task 7",
     "description": "My task 7's full description",
     "status": "pending",
-    "createdOn": 1587229713827,
-    "completeBy": 1587229713827
+    "createdOn": "2020-04-18",
+    "completeBy": "2020-04-18"
   }
 ]

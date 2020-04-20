@@ -5,3 +5,8 @@ spring:
   data:
     rest:
       base-path: /api
+      default-media-type: application/json
+  hateoas:
+    use-hal-as-default-json-media-type: false
+  jackson:
+    date-format: yyyy-MM-dd

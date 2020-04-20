@@ -1,19 +1,22 @@
 package com.demo.userservice.tasks;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import com.fasterxml.jackson.datatype.jsr310.deser.LocalDateDeserializer;
+import com.fasterxml.jackson.datatype.jsr310.ser.LocalDateSerializer;
+import lombok.*;
 
 import javax.persistence.*;
-import java.sql.Date;
+import java.time.LocalDate;
+import java.util.Date;
 
 @Data
 @Entity
-@Table(name = "task")
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
+@Table(name = "task")
 public class Task {
 
     @Id
@@ -23,7 +26,13 @@ public class Task {
     private String title;
     private String description;
     private String status;
-    private Date createdOn;
-    private Date completeBy;
+
+    @JsonDeserialize(using = LocalDateDeserializer.class)
+    @JsonSerialize(using = LocalDateSerializer.class)
+    private LocalDate createdOn;
+
+    @JsonDeserialize(using = LocalDateDeserializer.class)
+    @JsonSerialize(using = LocalDateSerializer.class)
+    private LocalDate completeBy;
 
 }
