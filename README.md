@@ -14,9 +14,11 @@ Below are a few hints as to what really matters to us as an engineering team.
 - We are strong proponents of 12 Factor Apps delivered via containerization 
 
 - Automation is very important to us. Your deliverable should include: 
-    - A build script showing how you compile and package your code o Automated unit tests with mocking where appropriate 
+    - A build script showing how you compile and package your code
+    - Automated unit tests with mocking where appropriate 
 - A well organized and documented code base is preferred. Your deliverable should include: 
-    - Code comments o API documentation for the microservice 
+    - Code comments
+    - API documentation for the microservice 
 - We develop our applications using a microservices architecture where the user interface (HTML, CSS and JavaScript) is separated from the business logic (microservices) each having their own lifecycle 
     - If using Docker and Docker Compose, the preference would be two separate containers; one for the UI and one for the microservice 
 
