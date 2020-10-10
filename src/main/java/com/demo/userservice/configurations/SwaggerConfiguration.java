@@ -12,12 +12,12 @@ import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.data.rest.configuration.SpringDataRestConfiguration;
 import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger.web.*;
-import springfox.documentation.swagger2.annotations.EnableSwagger2WebMvc;
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 import java.util.Collections;
 
 @Configuration
-@EnableSwagger2WebMvc
+@EnableSwagger2
 @Import({SpringDataRestConfiguration.class, BeanValidatorPluginsConfiguration.class})
 public class SwaggerConfiguration {
 
