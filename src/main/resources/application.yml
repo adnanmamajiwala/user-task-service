@@ -11,3 +11,9 @@ spring:
     use-hal-as-default-json-media-type: false
   jackson:
     date-format: yyyy-MM-dd
+
+app.cors:
+  allowed-origins: >
+    "http://localhost:4200"
+    "http://localhost:9000"
+    "https://user-task-svc.herokuapp.com"
